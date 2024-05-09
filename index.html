@@ -14,12 +14,12 @@
       <nav class="header__menu">
         <ul class="header__links-list">
           <li class="header__links-list-item header__links-list-item_no-bullit">
-            <a href="#0">главная</a>
+            <a href="#0" class="header__link_active">главная</a>
           </li>
           <li class="header__links-list-item">
             <a href="#0">посмотреть лоты</a>
           </li>
-          <li class="header__links-list-item">
+          <li class="header__links-list-item header__links-list-last-item">
             <a href="#0">об аукционе</a>
           </li>
         </ul>
@@ -27,13 +27,13 @@
       <a class="header__logo"> 
         <img class="header__logo-image" src="./images/logo-black.svg" alt="логотип проекта">
       </a>
-      <div>
-        <a href="tel:+70000000">+9 999 555 5555</a>
+      <address class="address">
+        <a href="+99995555555">+9 999 555 5555</a>
         <br>
         <a href="mailto:info@sobaka.ge">info@sobaka.ge</a>
         <p>наб. Принсенграхт 263-</p>
         <p>265, Амстердам</p>
-      </div>
+      </address>
     </header> 
 
     <main>
@@ -42,11 +42,12 @@
         <h1 class="cover__title">
           <span class="aligned-text">о<span class="letter-spacing-extended">но</span></span>
           <span class="aligned-text_center">те<span class="letter-spacing-extended">бе</span></span>
-          <span class="aligned-text_right"><span class="letter-spacing-extended">н</span>адо</span>
+          <span class="aligned-text_right">
+            <span class="letter-spacing-extended">н</span>ад<span class="no-letter-spacing">о</span></span>
         </h1>
         <div class="cover__description">
-          <a class="cover__description-text" href="#0">Аукцион вещей, в которые никто не верил</a>
-          <button class="bet-button">сделать ставку</button>
+          <p class="cover__description-text">Аукцион вещей, в которые никто не верил</p>
+          <button type="button" class="bet-button">сделать ставку</button>
         </div>
       </section>
 
@@ -54,9 +55,9 @@
         <h2 class="lots__heading">Лоты</h2>
           <ul class="lots__card-list">
             <li class="lots__card-list-item">
-              <div class="overlay"></div>
               <a href="#0">
                 <article class="card card_type_film">
+                  <div class="overlay"></div>
                   <h3 class="card__title">Фильм режиссёра, который бросил киношколу</h3>
                   <p class="card__text">
                     Не просто бросил, а ушёл с первой лекции. Какой была бы ваша ставка,
@@ -66,9 +67,9 @@
               </a>
             </li>
             <li class="lots__card-list-item">
-              <div class="overlay"></div>
               <a href="#0">
                 <article class="card card_type_book">
+                  <div class="overlay"></div>
                   <h3 class="card__title">
                     Книга, где описан один скучный день из жизни рекламного агента
                   </h3>
@@ -81,9 +82,9 @@
               </a>
             </li>
             <li class="lots__card-list-item">
-              <div class="overlay"></div>
               <a href="#0">
                 <article class="card card_type_picture">
+                  <div class="overlay"></div>
                   <h3 class="card__title">
                     Картина, которую повторит даже 5-летний сын маминой подруги
                   </h3>
@@ -123,14 +124,14 @@
     </main>
 
     <footer class="footer">
-      <div>
-        <a href="tel:+70000000">+9 999 555 5555</a>
+      <address class="footer__address">
+        <a href="+99995555555">+9 999 555 5555</a>
         <br>
         <a href="mailto:info@sobaka.ge">info@sobaka.ge</a>
         <p>наб. Принсенграхт 263-</p>
         <p>265, Амстердам</p>
-      </div>
-      <nav>
+      </address>
+      <nav class="footer__menu_nav">
         <ul  class="footer__menu-list">
           <li>
             <a class="footer__menu-link_active" href="#0">главная</a>
@@ -143,7 +144,6 @@
           </li>
         </ul>
       </nav>
-      <div>
         <ul class="footer__social-list">
           <li>
             <a  href="#0">
@@ -161,7 +161,6 @@
             </a>
           </li>
         </ul>
-      </div>
       
     </footer>
   </body>
